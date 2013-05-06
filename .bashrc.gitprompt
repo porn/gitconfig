@@ -1,5 +1,13 @@
 # using git-prompt.sh from here:
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+#
+# For instalation copy this file to your home directory and then:
+# $ mkdir -p ~/bin
+# $ cd ~/bin
+# $ wget https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+# $ echo source ~/.bashrc.gitprompt >> ~/.bashrc
+#
+# for configuration options see the git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
