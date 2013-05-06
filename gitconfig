@@ -1,0 +1,25 @@
+[include]
+	path = ~/.gitconfig.local
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
+	ls = log --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s (%cr - %C(red)%an%Creset)' --graph --abbrev-commit --date=relative
+	ll = log --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset (%ar - %Cred%an%Creset)%n%n%s%n%n%b%n' --decorate --stat --graph
+
+[core]
+	editor = vim
+	# pager = vim # doesn't support colors=(
+
+[merge]
+	tool = vimdiff
+
+[diff]
+	tool = vimdiff
+	noprefix = true
+
+[pager]
+	diff = vim -
