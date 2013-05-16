@@ -3,6 +3,7 @@
 
 [color]
 	branch = auto
+	status = auto
 
 [alias]
 	st = status
