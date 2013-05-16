@@ -10,6 +10,7 @@
 	ci = commit
 	co = checkout
 	br = branch
+	bra = branch -a
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
 	ls = log --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s (%cr - %C(red)%an%Creset)' --graph --color --abbrev-commit --date=relative
 	ll = log --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset (%ar - %Cred%an%Creset)%n%n%s%n%n%b%n' --decorate --stat --graph --color
