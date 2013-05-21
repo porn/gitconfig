@@ -11,6 +11,7 @@
 	co = checkout
 	br = branch
 	bra = branch -a
+	unstash = stash pop
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
 	ls = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color
 	ll = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color --all
