@@ -29,3 +29,4 @@ git config --global user.name "James Bond"
 
 # TODO
 - screenshots;-)
+- move installation of gitprompt here
