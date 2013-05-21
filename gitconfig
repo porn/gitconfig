@@ -29,3 +29,6 @@
 
 [pager]
 	diff = vim -
+
+[push]
+	default = simple
