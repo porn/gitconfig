@@ -1,6 +1,3 @@
-[include]
-	path = ~/.gitconfig.local
-
 [color]
 	branch = auto
 	status = auto
