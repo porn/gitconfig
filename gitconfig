@@ -1,6 +1,5 @@
 [color]
-	branch = auto
-	status = auto
+	ui = auto
 
 [alias]
 	st = status
@@ -25,7 +24,7 @@
 	noprefix = true
 
 [pager]
-	diff = vim -
+	diff = less
 
 [push]
 	default = simple
