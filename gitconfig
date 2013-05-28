@@ -1,6 +1,5 @@
 [color]
-	branch = auto
-	status = auto
+	ui = auto
 
 [alias]
 	st = status
@@ -26,7 +25,7 @@
 	algorithm = patience
 
 [pager]
-	diff = vim -
+	diff = less
 
 [push]
 	default = simple
