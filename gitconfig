@@ -23,6 +23,7 @@
 [diff]
 	tool = vimdiff
 	noprefix = true
+	algorithm = patience
 
 [pager]
 	diff = vim -
