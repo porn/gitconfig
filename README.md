@@ -7,10 +7,10 @@ have to deal with.
 
 The .gitconfig `[include]` syntax requires Git 1.7.10+. Though I recommend using the latest stable version if possible.
 
-1. Download or clone the repository to some directory (e.g. `~/tmp/gitconfig.porn/`).
+1. Download or clone the repository to some directory (e.g. `~/github/porn/gitconfig/`).
 Symlink the gitconfig to your home:
 ```
-ln -s ~/tmp/gitconfig.porn/gitconfig ~/.gitconfig.porn
+ln -s ~/github/porn/gitconfig ~/.gitconfig.porn
 ```
 
 2. Include the file in your `~/.gitconfig`:
