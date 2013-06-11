@@ -27,7 +27,7 @@
 	algorithm = patience
 
 [pager]
-	diff = less
+	diff = "vim -c '%sm/\\e.\\{-}m//ge' -c 'set ft=diff' -c 'normal gg' -"
 
 [push]
 	default = simple
