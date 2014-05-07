@@ -19,6 +19,7 @@
 	unstash = stash pop
 	ff = "!f(){ B=$(git rev-parse --abbrev-ref HEAD) && git merge --ff-only origin/$B; };f"
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
+	mkbranch = "!f(){ git checkout -b ${1} && git push origin -u ${1}; };f"
 	ls = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color
 	ll = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color --all
 	unfuck = "!f(){ git reset --hard origin/HEAD; rm -f `git st | grep ^? | cut -d' '  -f2-`; }; f"
