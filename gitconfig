@@ -12,7 +12,9 @@
 	bra = branch -a
 	dc = diff --cached
 	di = diff
-	ds = stash show -p
+	ds = "stash show stash@{0} -p"
+	ss = "!f(){ git stash show -p stash@{${1}}; };f"
+	sl = stash list
 	fp = fetch -p
 	unstash = stash pop
 	ff = "!f(){ B=$(git rev-parse --abbrev-ref HEAD) && git merge --ff-only origin/$B; };f"
