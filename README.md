@@ -8,12 +8,17 @@ have to deal with.
 The .gitconfig `[include]` syntax requires Git 1.7.10+. Though I recommend using the latest stable version if possible.
 
 1. Download or clone the repository to some directory (e.g. `~/github/porn/gitconfig/`).
-Symlink the gitconfig to your home:
 ```
-ln -s ~/github/porn/gitconfig ~/.gitconfig.porn
+cd
+mkdir -p github/porn
+cd github/porn
+git clone https://github.com/porn/gitconfig.git
 ```
-
-2. Include the file in your `~/.gitconfig`:
+2. Symlink the gitconfig to your home:
+```
+ln -s ~/github/porn/gitconfig/gitconfig ~/.gitconfig.porn
+```
+3. Include the file in your `~/.gitconfig`:
 ```
 [user]
 	name = Your Name
