@@ -1,19 +1,9 @@
-# using git-prompt.sh from here:
-# https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
-#
-# For instalation copy this file to your home directory and then:
-# $ mkdir -p ~/bin
-# $ cd ~/bin
-# $ wget https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
-# $ echo source ~/.bashrc.gitprompt >> ~/.bashrc
-#
-# for configuration options see the git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS=1
 
-source ~/bin/git-prompt.sh
+source /usr/lib/git-core/git-sh-prompt
 
 PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;35m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
