@@ -3,6 +3,12 @@
 My personal git configuration being used on my laptop as well as on servers I
 have to deal with.
 
+# Features
+* colours everywhere
+* many aliases to save your fingers!
+* using vim for diff and merges
+* git-sh-prompt setup
+
 # Installation
 
 The .gitconfig `[include]` syntax requires Git 1.7.10+. Though it is
@@ -45,7 +51,3 @@ out and in, just source the file:
 ```
 $ source ~/github/porn/gitconfig/bashrc.gitprompt
 ```
-
-
-# TODO
-- screenshots;-)
