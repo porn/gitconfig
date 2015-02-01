@@ -12,7 +12,7 @@ have to deal with.
 # Installation
 
 The .gitconfig `[include]` syntax requires Git 1.7.10+. Though it is
-recommended to use the latest stable version if possible.
+recommended to use the [latest stable version](https://launchpad.net/~git-core/+archive/ubuntu/ppa) if possible.
 
 * Download or clone the repository to some directory (e.g. `~/github/porn/gitconfig/`).
 ```
@@ -22,23 +22,16 @@ cd github/porn
 git clone https://github.com/porn/gitconfig.git
 ```
 
-* Symlink the gitconfig to your home:
-```
-ln -s ~/github/porn/gitconfig/gitconfig ~/.gitconfig.porn
-```
-
 * Include the gitconfig file in your `~/.gitconfig`:
 ```
-[user]
-	name = Your Name
-	email = email@example.xxx
-...
 [include]
 	path = ~/github/porn/gitconfig/gitconfig
+...
 ```
 This way your local changes won't overwrite the file when you use:
 ```
 git config --global user.name "James Bond"
+git config --global user.email "jb@example.com"
 ```
 
 * Include the git prompt config in your `~/.bashrc`:
