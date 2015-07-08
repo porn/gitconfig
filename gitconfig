@@ -17,6 +17,7 @@
 	ss = "!f(){ git stash show -p stash@{${1}}; };f"
 	sl = stash list
 	sm = submodule
+	sup = submodule update
 	fa = fetch --all
 	fp = fetch --prune
 	unstash = stash pop
