@@ -15,8 +15,9 @@
 	ds = "stash show stash@{0} -p"
 	ss = "!f(){ git stash show -p stash@{${1}}; };f"
 	sl = stash list
+	sm = submodule
 	fa = fetch --all
-	fp = fetch -p
+	fp = fetch --prune
 	unstash = stash pop
 	ff = "!f(){ B=$(git rev-parse --abbrev-ref HEAD) && git merge --ff-only origin/$B; };f"
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
