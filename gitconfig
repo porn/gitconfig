@@ -6,6 +6,7 @@
 	alias = "!f(){ git config -l | grep alias; };f"
 	st = status --short --branch
 	ci = commit
+	cl = "!f() { echo 'Remove following files?'; echo; git clean -dn; echo; echo 'Press ENTER to confirm'; read -p 'Press ^C to stop cleanup and exit' a && git clean -df; }; f"
 	co = checkout
 	cp = cherry-pick
 	br = branch
