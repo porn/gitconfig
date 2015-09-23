@@ -18,6 +18,7 @@
 	sl = stash list
 	sm = submodule
 	sup = submodule update
+	sll = "!f() { for s in `git stash list --pretty=format:%gd`; do git stash show -p $s; done; };f"
 	fa = fetch --all
 	fp = fetch --prune
 	unstash = stash pop
