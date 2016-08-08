@@ -30,6 +30,7 @@
 	ls = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color
 	ll = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color --all
 	unfuck = "!f(){ git reset --hard origin/`git rev-parse --abbrev-ref HEAD`; rm -fv `git st | grep ^? | cut -d' '  -f2-`; }; f"
+	up = "pull --ff-only --stat --prune"
 
 [core]
 	editor = vim
