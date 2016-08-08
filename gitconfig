@@ -10,7 +10,7 @@
 	co = checkout
 	cp = cherry-pick
 	br = branch
-	bra = branch -avv
+	bra = branch -avv --list
 	dc = diff --cached
 	di = diff
 	ds = "stash show stash@{0} -p"
