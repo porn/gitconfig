@@ -4,8 +4,10 @@
 
 [alias]
 	alias = "!f(){ git config -l | grep alias; };f"
+	mr = "!f(){ gitlab-cli create-merge-request; };f"
 	st = status --short --branch
 	ci = commit
+	aci = "!f(){ git add . && git commit; };f"
 	cl = "!f() { echo 'Remove following files?'; echo; git clean -dn; echo; echo 'Press ENTER to confirm'; read -p 'Press ^C to stop cleanup and exit' a && git clean -df; }; f"
 	co = checkout
 	cp = cherry-pick
