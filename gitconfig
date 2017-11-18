@@ -35,8 +35,8 @@
 	up = "pull --ff-only --stat --prune"
 	vim = "!f(){ vim -p `git st | cut -c 2- | grep '^M\\|\\?' | cut -d' ' -f2-`; }; f"
 	rs = reset HEAD~
-	origin = config --list --show-origin
-	clean = clean -e "languages/app*" -e "app/config/*" -xf
+	conori = config --list --show-origin
+	clean = clean -e "languages/app*" -e "app/config/*" -xf	
 
 [core]
 	editor = vim
