@@ -36,8 +36,7 @@
 	vim = "!f(){ vim -p `git st | cut -c 2- | grep '^M\\|\\?' | cut -d' ' -f2-`; }; f"
 	rs = reset HEAD~
 	ori = config --list --show-origin
-	deloc = !f(){ fetch -p && for branch in `git branch -vv | grep ": gone]" | awk "{print $1}"`; do echo $branch; done };
-	delo = "!f(){ for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do echo $branch; done };f"
+	deloc = "!f(){ for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done };f"
 
 [core]
 	editor = vim
