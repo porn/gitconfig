@@ -44,3 +44,6 @@ out and in, just source the file:
 ```
 $ source ~/github/porn/gitconfig/bashrc.gitprompt
 ```
+
+# auto-complete fixes
+If shell does not auto-complete, for example branche names after typing `git co om- 'tab' 'tab'` use [this](https://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line) help on stack owerflow
