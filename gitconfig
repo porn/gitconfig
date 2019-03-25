@@ -38,6 +38,7 @@
 	vim = "!f(){ vim -p `git st | cut -c 2- | grep '^M\\|\\?' | cut -d' ' -f2-`; }; f"
 	stash-stage = "!f(){ git stash -- $(git diff --name-only --staged); }; f"
 	rs = reset HEAD~
+	defo = "!f(){ for branch in `git branch -vv | grep -vE '/om-|master' | awk '{print $1}'`; do git branch -D $branch; done };f"	# delete foreign - those not containing 'om-' (my branch prefix) or 'master'
 
 [core]
 	editor = vim
