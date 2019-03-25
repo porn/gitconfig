@@ -37,6 +37,7 @@
 	rs = reset HEAD~
 	ori = config --list --show-origin
 	deloc = "!f(){ for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done };f"
+	defo = "!f(){ for branch in `git branch -vv | grep -vE '/om-|master' | awk '{print $1}'`; do git branch -D $branch; done };f"	# delete foreign - those not containing 'om-' (my branch prefix) or 'master'
 
 [core]
 	editor = vim
