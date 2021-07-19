@@ -1,0 +1,22 @@
+# General
+log/
+*.log
+ctags
+
+# vim
+*~
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Microsoft's VSCode editor
+.vscode/
+
+# InteliJ's editors
+.idea/
+
+# TextMate editor
+.tmproj
