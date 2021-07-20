@@ -38,6 +38,7 @@
 [core]
 	editor = vim
 	# pager = vim # doesn't support colors=(
+	excludesfile = "~/.gitignore"
 
 [merge]
 	tool = vimdiff

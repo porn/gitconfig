@@ -34,6 +34,11 @@ git config --global user.name "James Bond"
 git config --global user.email "jb@example.com"
 ```
 
+* Symlink the global gitignore file to your home directory
+```
+ln -s ~/github/porn/gitignore.global ~/.gitignore
+```
+
 * Include the git prompt config in your `~/.bashrc`:
 ```
 $ echo "source ~/github/porn/gitconfig/bashrc.gitprompt" >> ~/.bashrc
