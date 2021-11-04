@@ -3,7 +3,7 @@
 	ui = auto
 
 [alias]
-	alias = "!f(){ git config -l | grep alias; };f"
+	alias = "!f(){ git config -l | grep alias | sort; };f"
 	st = status --short --branch
 	ci = commit
 	cia = commit --amend --no-edit
