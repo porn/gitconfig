@@ -50,7 +50,7 @@
 	renames = copies
 
 [pager]
-	diff = "vim -c '%sm/\\e.\\{-}m//ge' -c 'set ft=diff' -c 'normal gg' -"
+	diff = "vim -c '%sm/\\e.\\{-}m//ge' -c 'set ft=diff' -c 'normal gg' -c 'set buftype=nofile' -"
 
 [push]
 	default = simple
