@@ -24,7 +24,9 @@
 	fp = fetch --prune
 	unstash = stash pop
 	ff = "!f(){ B=$(git rev-parse --abbrev-ref HEAD) && git merge --ff-only origin/$B; };f"
+	me = merge --no-ff
 	mm = merge --no-ff -
+	mt = mergetool
 	k = "!f(){ gitk master origin/master ORIG_HEAD HEAD; };f"
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
 	mkbranch = "!f(){ git checkout -b ${1} && git push origin -u ${1}; };f"
