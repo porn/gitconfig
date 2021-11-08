@@ -27,7 +27,7 @@
 	me = merge --no-ff
 	mm = merge --no-ff -
 	mt = mergetool
-	k = "!f(){ gitk master origin/master ORIG_HEAD HEAD; };f"
+	k = "!f(){ gitk HEAD origin/`git rev-parse --abbrev-ref HEAD`; };f"
 	rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
 	mkbranch = "!f(){ git checkout -b ${1} && git push origin -u ${1}; };f"
 	ls = log --pretty=format:'%C(green)%h%Creset - %s%C(yellow)%d%Creset%n          %aD (%ar %C(red)- %an%Creset)' --graph --color
