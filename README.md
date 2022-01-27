@@ -11,9 +11,6 @@ have to deal with.
 
 # Installation
 
-The .gitconfig `[include]` syntax requires Git 1.7.10+. Though it is
-recommended to use the [latest stable version](https://launchpad.net/~git-core/+archive/ubuntu/ppa) if possible.
-
 * Download or clone the repository to some directory (e.g. `~/github/porn/gitconfig/`).
 ```
 cd
@@ -28,16 +25,43 @@ git clone https://github.com/porn/gitconfig.git
 	path = ~/github/porn/gitconfig/gitconfig
 ...
 ```
-This way your local changes won't overwrite the file when you use:
+This way your personal changes won't overwrite the file when you use:
 ```
 git config --global user.name "James Bond"
 git config --global user.email "jb@example.com"
 ```
 
+## Global Ignore
+Feel free to use my collection of file patterns I don't want to track:
 * Symlink the global gitignore file to your home directory
 ```
 ln -s ~/github/porn/gitignore.global ~/.gitignore
 ```
+
+## Shell Prompt
+To display the git repository status in the bash prompt there are two options.
+
+### Starship
+I'd love to recommend [starship](https://github.com/starship/starship) project.
+See the "screenshot":
+```
+…/gitconfig (master) [*%] at 10:25:17 $ git st
+## master...origin/master
+ M README.md
+ M gitconfig
+?? .README.md.swp
+…/gitconfig (master) [*%] at 10:25:19 $
+```
+
+...on the prompt you can see:
+- we're on the `master` branch
+- `*` stands for `Changes not staged for commit`
+- `%` stands for `Untracked files`
+- and the time :)
+
+### Bash Prompt Configuration
+Kinda similar (but way poorer, bash-only) effect can be achieved using the
+`bashrc.gitprompt` in this repo:
 
 * Include the git prompt config in your `~/.bashrc`:
 ```
