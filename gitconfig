@@ -36,6 +36,7 @@
 	unfuck = "!f(){ git reset --hard origin/`git rev-parse --abbrev-ref HEAD`; rm -rfv `git status --short | grep ^? | cut -d' '  -f2-`; }; f"
 	up = "pull --ff-only --stat --prune"
 	vim = "!f(){ vim -p `git st | cut -c 2- | grep '^M\\|\\?' | cut -d' ' -f2-`; }; f"
+	stash-stage = "!f(){ git stash -- $(git diff --name-only --staged); }; f"
 
 [core]
 	editor = vim
