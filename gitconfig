@@ -12,6 +12,9 @@
 	cp = cherry-pick
 	br = branch
 	bra = branch -avv --list
+	rb = rebase -i master --autosquash
+	rbc = rebase --continue
+	rba = rebase --abort
 	dc = diff --cached
 	di = diff
 	ds = "stash show stash@{0} -p"
