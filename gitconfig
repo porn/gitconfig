@@ -13,7 +13,7 @@
 	cp = cherry-pick
 	br = branch
 	bra = branch -avv --list
-	rb = rebase -i master --autosquash
+	rb = rebase -i develop --autosquash
 	rbc = rebase --continue
 	rba = rebase --abort
 	dc = diff --cached
